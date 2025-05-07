@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+body {
+    font-family: 'NanumSquareNeo-Variable';
+    padding: 0;
+    margin: 0;
+    background-color: #92CAFF;
+}
+
+button {
+    cursor: pointer;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 40px;
+}
+
+#header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+#header .add {
+    text-align: center;
+    position: relative;
+}
+
+.add input {
+    width: 100%;
+    padding: 20px 30px;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 16px;
+}
+
+.add input::placeholder {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 15px;
+}
+
+.add button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000000;
+    border: 0;
+}
+
+.add button img {
+    width: 22px;
+    height: 22px;
+}
+
+#main {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#main .list {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    height: 100%;
+    border-bottom: 2px solid #92CAFF;
+}
+
+.list div {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 80%;
+    color: #3F6181;
+}
+
+.list div p {
+    width: 80%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #92CAFF;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: '✓';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #92CAFF;
+}
+
+.list button {
+    background-color: #00000000;
+    border: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.list button img {
+    width: 15px;
+    height: 15px;
+}
